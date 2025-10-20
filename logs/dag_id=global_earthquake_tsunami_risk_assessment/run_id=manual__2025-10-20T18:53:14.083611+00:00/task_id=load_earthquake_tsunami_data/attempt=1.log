@@ -1,0 +1,36 @@
+[2025-10-20T18:53:14.878+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: global_earthquake_tsunami_risk_assessment.load_earthquake_tsunami_data manual__2025-10-20T18:53:14.083611+00:00 [queued]>
+[2025-10-20T18:53:14.881+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: global_earthquake_tsunami_risk_assessment.load_earthquake_tsunami_data manual__2025-10-20T18:53:14.083611+00:00 [queued]>
+[2025-10-20T18:53:14.881+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-20T18:53:14.881+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2025-10-20T18:53:14.881+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-10-20T18:53:14.886+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): load_earthquake_tsunami_data> on 2025-10-20 18:53:14.083611+00:00
+[2025-10-20T18:53:14.888+0000] {standard_task_runner.py:55} INFO - Started process 117 to run task
+[2025-10-20T18:53:14.890+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'global_earthquake_tsunami_risk_assessment', 'load_earthquake_tsunami_data', 'manual__2025-10-20T18:53:14.083611+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmpbukykf2k']
+[2025-10-20T18:53:14.892+0000] {standard_task_runner.py:83} INFO - Job 27: Subtask load_earthquake_tsunami_data
+[2025-10-20T18:53:14.914+0000] {task_command.py:388} INFO - Running <TaskInstance: global_earthquake_tsunami_risk_assessment.load_earthquake_tsunami_data manual__2025-10-20T18:53:14.083611+00:00 [running]> on host a5e1af053224
+[2025-10-20T18:53:14.939+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=sreevarshan
+AIRFLOW_CTX_DAG_ID=global_earthquake_tsunami_risk_assessment
+AIRFLOW_CTX_TASK_ID=load_earthquake_tsunami_data
+AIRFLOW_CTX_EXECUTION_DATE=2025-10-20T18:53:14.083611+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-10-20T18:53:14.083611+00:00
+[2025-10-20T18:53:14.942+0000] {python.py:177} INFO - Done. Returned value was:      magnitude  cdi  mmi  sig  nst  ...  latitude  longitude  Year  Month  tsunami
+0          7.0    8    7  768  117  ...   -9.7963    159.596  2022     11        1
+1          6.9    4    4  735   99  ...   -4.9559    100.738  2022     11        0
+2          7.0    3    3  755  147  ...  -20.0508   -178.346  2022     11        1
+3          7.3    5    5  833  149  ...  -19.2918   -172.129  2022     11        1
+4          6.6    0    2  670  131  ...  -25.5948    178.278  2022     11        1
+..         ...  ...  ...  ...  ...  ...       ...        ...   ...    ...      ...
+777        7.7    0    8  912  427  ...   13.0490    -88.660  2001      1        0
+778        6.9    5    7  745    0  ...   56.7744   -153.281  2001      1        0
+779        7.1    0    7  776  372  ...  -14.9280    167.170  2001      1        0
+780        6.8    0    5  711   64  ...    6.6310    126.899  2001      1        0
+781        7.5    0    7  865  324  ...    6.8980    126.579  2001      1        0
+
+[782 rows x 13 columns]
+[2025-10-20T18:53:14.961+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=global_earthquake_tsunami_risk_assessment, task_id=load_earthquake_tsunami_data, execution_date=20251020T185314, start_date=20251020T185314, end_date=20251020T185314
+[2025-10-20T18:53:14.990+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2025-10-20T18:53:15.002+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
