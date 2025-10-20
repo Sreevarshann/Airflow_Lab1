@@ -1,0 +1,11 @@
+# Core dependencies
+apache-airflow==2.5.1
+pandas
+scikit-learn
+kneed
+matplotlib
+numpy
+
+# Optional utilities
+requests
+psycopg2-binary
